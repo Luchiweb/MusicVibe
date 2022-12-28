@@ -17,10 +17,30 @@ localStorage.theme = "dark";
 // Whenever the user explicitly chooses to respect the OS preference
 localStorage.removeItem("theme");
 
+// Dark mode change
 function toggleDarkMode() {
   document.documentElement.classList.toggle("dark");
 }
-
 const themeButton = document.getElementById("theme-button");
-
 themeButton.addEventListener("click", toggleDarkMode);
+
+//Menu burger
+const burger = document.getElementById("burger");
+const body = document.body;
+const closeButton = document.getElementById("close");
+const menu = document.getElementById("menu");
+
+function closeMenu() {
+  menu.classList.remove("flex");
+  menu.classList.add("hidden");
+  body.classList.remove("overflow-hidden");
+}
+
+function openMenu() {
+  menu.classList.remove("hidden");
+  menu.classList.add("flex");
+  body.classList.add("overflow-hidden");
+}
+
+burger.addEventListener("click", openMenu);
+closeButton.addEventListener("click", closeMenu);
