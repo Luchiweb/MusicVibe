@@ -15,13 +15,18 @@
     <link rel="shortcut icon" href="./img/ico.ico" type="image/x-icon" />
   </head>
   <body class="text-mainColor dark:bg-mainColor dark:text-white relative">
-    <div
-      class="bg-rose-200 md:bg-white dark:bg-subColor/25 dark:md:bg-mainColor"
-    >
+    <div class="bg-rose-200 md:bg-white dark:bg-subColor dark:md:bg-mainColor">
       <section
         class="p-4 md:pt-8 flex flex-row place-content-between items-center container mx-auto"
       >
-        <p class="text-[25px] font-semibold">Music Vibes</p>
+        <a href="#"
+          ><p
+            class="text-[25px] transition-all font-semibold bg-clip-text hover:text-transparent bg-gradient-to-r from-mainColor dark:from-white to-subColor bg-[length:300%] hover:animate-flow"
+            id="logo"
+          >
+            Music Vibes
+          </p></a
+        >
         <div
           class="hidden md:relative md:p-0 md:w-auto md:h-auto md:flex-row md:gap-0 p-5 absolute top-0 right-0 w-full h-full items-center justify-start gap-8 flex-col bg-white dark:bg-mainColor md:space-x-8 md:flex md:flex-wrap md:items-center"
           id="menu"
@@ -37,8 +42,8 @@
             class="border-2 transition-colors bg-subColor border-subColor hover:bg-rose-700 hover:border-white dark:hover:border-mainColor align-middle rounded-full py-[10px] px-[15px] text-white font-semibold"
             >Day's composition</a
           >
-          <a href="#" class="hover:text-subColor">About</a>
-          <a href="#" class="hover:text-subColor">Popular</a>
+          <a href="#" class="hover:text-subColor transition-colors">About</a>
+          <a href="#" class="hover:text-subColor transition-colors">Popular</a>
           <a href="#" id="theme-button">
             <svg
               width="40"
@@ -52,7 +57,7 @@
                 cy="20"
                 r="20"
                 fill="#E01B51"
-                class="hover:fill-rose-700"
+                class="hover:fill-rose-700 transition-colors"
               />
               <path
                 d="M17.4871 22.5156C17.1569 22.1854 16.895 21.7934 16.7164 21.362C16.5377 20.9306 16.4457 20.4683 16.4457 20.0013C16.4457 19.5344 16.5377 19.072 16.7164 18.6407C16.895 18.2093 17.1569 17.8173 17.4871 17.4871C17.8173 17.1569 18.2093 16.895 18.6407 16.7164C19.072 16.5377 19.5344 16.4457 20.0013 16.4457C20.4683 16.4457 20.9306 16.5377 21.362 16.7164C21.7934 16.895 22.1854 17.1569 22.5156 17.4871"
@@ -300,11 +305,11 @@
         <!-- Slider controls -->
         <button
           type="button"
-          class="absolute bottom-[50px] md:bottom-[60px] right-16 z-30 flex items-start justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          class="absolute transition-colors bottom-[50px] md:bottom-[60px] right-16 z-30 flex items-start justify-center h-full px-4 cursor-pointer group focus:outline-none"
           data-carousel-prev
         >
           <span
-            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-subColor/30 dark:bg-subColor group-hover:bg-subColor dark:group-hover:bg-subColor/60 group-focus:outline-none"
+            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-subColor/30 dark:bg-subColor md:group-hover:bg-subColor dark:md:group-hover:bg-subColor/60 group-focus:outline-none"
           >
             <svg
               aria-hidden="true"
@@ -326,11 +331,11 @@
         </button>
         <button
           type="button"
-          class="absolute bottom-[50px] md:bottom-[60px] right-0 z-30 flex items-start justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          class="absolute transition-colors bottom-[50px] md:bottom-[60px] right-0 z-30 flex items-start justify-center h-full px-4 cursor-pointer group focus:outline-none"
           data-carousel-next
         >
           <span
-            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-subColor/30 dark:bg-subColor group-hover:bg-subColor dark:group-hover:bg-subColor/60 group-focus:outline-none"
+            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-subColor/30 dark:bg-subColor md:group-hover:bg-subColor dark:md:group-hover:bg-subColor/60 group-focus:outline-none"
           >
             <svg
               aria-hidden="true"

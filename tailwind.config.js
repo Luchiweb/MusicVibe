@@ -5,17 +5,21 @@ module.exports = {
   darcMode: "class",
   theme: {
     extend: {
+      keyframes: {
+        flow: {
+          "0%, 100%": { "background-position": "0 50%" },
+          "50%": { "background-position": "100% 50%" },
+        },
+      },
       colors: {
         mainColor: "#0D1A3C",
         subColor: "#E01B51",
       },
-      // screens: {
-      //   lg: { max: "1120px" },
-      //   md: { max: "768px" },
-      //   sm: { max: "350px" },
-      // },
       container: {
         padding: "15px",
+      },
+      animation: {
+        flow: "flow 2s ease-in-out",
       },
     },
   },
