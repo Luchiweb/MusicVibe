@@ -2,6 +2,7 @@
 
 module.exports = {
   content: ["./**/*.html", "./node_modules/flowbite/**/*.js"],
+  darcMode: "class",
   theme: {
     extend: {
       colors: {
@@ -14,7 +15,7 @@ module.exports = {
       //   sm: { max: "350px" },
       // },
       container: {
-        padding: "10px",
+        padding: "15px",
       },
     },
   },
