@@ -1,368 +1,235 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Music Vibes</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="./img/ico.ico" type="image/x-icon" />
-  </head>
-  <body class="text-mainColor dark:bg-mainColor dark:text-white relative">
-    <div class="bg-rose-200 md:bg-white dark:bg-subColor dark:md:bg-mainColor">
-      <section
-        class="p-4 md:pt-8 flex flex-row place-content-between items-center container mx-auto"
-      >
-        <a href="#"
-          ><p
-            class="text-[25px] transition-all font-semibold bg-clip-text hover:text-transparent bg-gradient-to-r from-mainColor dark:from-white to-subColor bg-[length:300%] hover:animate-flow"
-            id="logo"
-          >
-            Music Vibes
-          </p></a
-        >
-        <div
-          class="hidden md:relative md:p-0 md:w-auto md:h-auto md:flex-row md:gap-0 p-5 absolute top-0 right-0 w-full h-full items-center justify-start gap-8 flex-col bg-white dark:bg-mainColor md:space-x-8 md:flex md:flex-wrap md:items-center"
-          id="menu"
-        >
-          <img
-            src="./img/close.svg"
-            alt="close"
-            class="w-[30px] md:hidden self-end"
-            id="close"
-          />
-          <a
-            href="#"
-            class="border-2 transition-colors bg-subColor border-subColor hover:bg-rose-700 hover:border-white dark:hover:border-mainColor align-middle rounded-full py-[10px] px-[15px] text-white font-semibold"
-            >Day's composition</a
-          >
-          <a href="#" class="hover:text-subColor transition-colors">About</a>
-          <a href="#" class="hover:text-subColor transition-colors">Popular</a>
-          <a href="#" id="theme-button">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="20"
-                cy="20"
-                r="20"
-                fill="#E01B51"
-                class="hover:fill-rose-700 transition-colors"
-              />
-              <path
-                d="M17.4871 22.5156C17.1569 22.1854 16.895 21.7934 16.7164 21.362C16.5377 20.9306 16.4457 20.4683 16.4457 20.0013C16.4457 19.5344 16.5377 19.072 16.7164 18.6407C16.895 18.2093 17.1569 17.8173 17.4871 17.4871C17.8173 17.1569 18.2093 16.895 18.6407 16.7164C19.072 16.5377 19.5344 16.4457 20.0013 16.4457C20.4683 16.4457 20.9306 16.5377 21.362 16.7164C21.7934 16.895 22.1854 17.1569 22.5156 17.4871"
-                stroke="white"
-                stroke-width="2"
-                troke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M19.3725 20.6284L19.5271 20.848C20.4064 22.0369 21.656 22.8997 23.0793 23.3007C24.5025 23.7017 26.0188 23.6181 27.3893 23.0631C26.8849 24.2769 26.0892 25.3477 25.0726 26.1808C24.0559 27.0139 22.8496 27.5837 21.5604 27.8398C20.2712 28.0958 18.9387 28.0303 17.6809 27.649C16.423 27.2676 15.2785 26.5822 14.3485 25.6533M12 20H12.8889M20 12V12.8889M14.3111 14.3111L14.9333 14.9333M12 28L28 12"
-                stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-        </div>
-        <div class="flex md:hidden" id="burger">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-9 h-9"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </div>
-      </section>
-    </div>
-    <section
-      class="container mx-auto flex mt-9 place-content-between gap-x-9 lg:gap-x-14 xl:gap-x-48 items-center"
-    >
-      <div class="">
-        <h1
-          class="font-extrabold text-[43px] leading-[60px] md:text-[50px] lg:text-[70px] lg:leading-[75px]"
-        >
-          Music to suit your mood
-        </h1>
-        <p class="mt-4 lg:mt-8">
-          Behind every song, there's always an emotion. Maybe that's why we love
-          music. By sharing emotions, we put each other in the mood. Listen to
-          music to suit YOUR mood!
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Vibes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="./img/ico.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="relative text-mainColor dark:text-white dark:bg-mainColor">
+  <div class="bg-rose-200 md:bg-white dark:bg-subColor dark:md:bg-mainColor">
+    <section class="container mx-auto flex flex-row place-content-between items-center p-4 md:pt-8">
+      <a href="#">
+        <p class="text-[25px] font-semibold bg-clip-text bg-[length:300%]hover:text-transparent hover:animate-flow bg-gradient-to-r from-mainColor to-subColor dark:from-white transition-all"
+          id="logo">
+          Music Vibes
         </p>
-        <div class="flex flex-wrap gap-2 mt-5 items-center md:gap-4 lg:mt-7">
-          <a
-            href="#"
-            class="py-[10px] px-2 w-full md:w-auto text-center rounded-full border-2 transition-colors bg-subColor border-subColor hover:bg-rose-700 dark:hover:border-mainColor hover:border-white text-white font-semibold md:px-3"
-            >Choose your mood</a
-          >
-          <a
-            href="#"
-            class="py-[10px] px-2 w-full md:w-auto text-center rounded-full border-2 transition-colors border-subColor hover:bg-rose-700 dark:hover:border-mainColor hover:border-white hover:text-white font-medium md:px-5"
-            >Random song</a
-          >
-        </div>
-      </div>
-      <img
-        src="./img/music.png"
-        alt="music"
-        class="hidden md:block w-[300px] lg:w-[450px]"
-      />
-    </section>
-    <section class="container mx-auto mt-10">
-      <h2 class="text-4xl font-extrabold text-center mb-11 lg:text-6xl">
-        Top Playlists
-      </h2>
+      </a>
       <div
-        class="mt-6 space-y-12 md:grid md:grid-cols-3 md:gap-x-8 lg:gap-x-10 xl:gap-x-24 md:space-y-0"
-      >
-        <div
-          class="group relative p-4 rounded-xl transition-all shadow-2xl bg-white hover:shadow-subColor"
-        >
-          <div
-            class="relative h-64 md:h-48 lg:h-64 w-full overflow-hidden rounded-lg sm:aspect-w-2 sm:aspect-h-1 lg:aspect-square"
-          >
-            <img
-              src="./img/card-1.jpg"
-              alt="1"
-              class="h-full w-full object-cover object-center"
-            />
-          </div>
-          <a href="#"
-            ><p
-              class="text-center text-2xl font-semibold transition-all text-mainColor group-hover:text-subColor mt-4"
-            >
-              Good morning
-            </p></a
-          >
-        </div>
-        <div
-          class="group relative p-4 rounded-xl transition-all shadow-2xl bg-white hover:shadow-cyan-600"
-        >
-          <div
-            class="relative h-64 md:h-48 lg:h-64 w-full overflow-hidden rounded-lg sm:aspect-w-2 sm:aspect-h-1 lg:aspect-square"
-          >
-            <img
-              src="./img/card-2.jpg"
-              alt=""
-              class="h-full w-full object-cover object-center"
-            />
-          </div>
-          <a href="#">
-            <p
-              class="text-center text-2xl font-semibold transition-all text-mainColor group-hover:text-cyan-600 mt-4"
-            >
-              Melancholics
-            </p>
-          </a>
-        </div>
-        <div
-          class="group relative p-4 rounded-xl transition-all shadow-2xl bg-white hover:shadow-indigo-900"
-        >
-          <div
-            class="relative h-64 md:h-48 lg:h-64 w-full overflow-hidden rounded-lg sm:aspect-w-2 sm:aspect-h-1 lg:aspect-square"
-          >
-            <img
-              src="./img/card-3.jpg"
-              alt=""
-              class="h-full w-full object-cover object-center"
-            />
-          </div>
-          <a href="#">
-            <p
-              class="text-center text-2xl font-semibold transition-all text-mainColor group-hover:text-indigo-900 mt-4"
-            >
-              Romance
-            </p></a
-          >
-        </div>
+        class="hidden p-5 absolute top-0 right-0 w-full h-full items-center justify-start gap-8 flex-col bg-white md:space-x-8 md:flex md:flex-wrap md:items-center md:relative md:p-0 md:w-auto md:h-auto md:flex-row md:gap-0 dark:bg-mainColor "
+        id="menu">
+        <img src="./img/close.svg" alt="close" class="w-[30px] self-end md:hidden" id="close" />
+        <a href="#"
+          class="text-white font-semibold bg-subColor border-2 border-subColor hover:bg-rose-700 hover:border-white dark:hover:border-mainColor transition-colors align-middle rounded-full py-[10px] px-[15px] ">
+          Day's composition
+        </a>
+        <a href="#" class="hover:text-subColor transition-colors">About</a>
+        <a href="#" class="hover:text-subColor transition-colors">Popular</a>
+        <a href="#" id="theme-button">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#E01B51" class="hover:fill-rose-700 transition-colors" />
+            <path
+              d="M17.4871 22.5156C17.1569 22.1854 16.895 21.7934 16.7164 21.362C16.5377 20.9306 16.4457 20.4683 16.4457 20.0013C16.4457 19.5344 16.5377 19.072 16.7164 18.6407C16.895 18.2093 17.1569 17.8173 17.4871 17.4871C17.8173 17.1569 18.2093 16.895 18.6407 16.7164C19.072 16.5377 19.5344 16.4457 20.0013 16.4457C20.4683 16.4457 20.9306 16.5377 21.362 16.7164C21.7934 16.895 22.1854 17.1569 22.5156 17.4871"
+              stroke="white" stroke-width="2" troke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M19.3725 20.6284L19.5271 20.848C20.4064 22.0369 21.656 22.8997 23.0793 23.3007C24.5025 23.7017 26.0188 23.6181 27.3893 23.0631C26.8849 24.2769 26.0892 25.3477 25.0726 26.1808C24.0559 27.0139 22.8496 27.5837 21.5604 27.8398C20.2712 28.0958 18.9387 28.0303 17.6809 27.649C16.423 27.2676 15.2785 26.5822 14.3485 25.6533M12 20H12.8889M20 12V12.8889M14.3111 14.3111L14.9333 14.9333M12 28L28 12"
+              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+      <div class="flex md:hidden" id="burger">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
       </div>
     </section>
-    <section class="container mx-auto mt-16 mb-12">
-      <h2 class="text-4xl font-extrabold text-center mb-20 lg:text-6xl">
-        Reviews
-      </h2>
-      <div id="controls-carousel" class="relative" data-carousel="static">
-        <!-- Carousel wrapper -->
-        <div class="relative h-52 md:h-40 overflow-hidden rounded-lg">
-          <!-- Item 1 -->
-          <div
-            class="hidden bg-white dark:bg-mainColor duration-700 ease-in-out"
-            data-carousel-item="active"
-          >
-            <div
-              class="border-mainColor dark:border-white border-2 rounded-3xl"
-            >
-              <div class="p-3">
-                <p class="text-[16px] md:text-xl mb-4">
-                  This is the best site! There is a good energy here that gives
-                  good spirits and good memories! Good luck to you!
-                </p>
-                <p class="text-sm md:text-xl font-semibold text-slate-400">
-                  Ann 14.08.2022
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Item 2 -->
-          <div
-            class="hidden bg-white dark:bg-mainColor duration-700 ease-in-out"
-            data-carousel-item
-          >
-            <div
-              class="border-mainColor dark:border-white border-2 rounded-3xl"
-            >
-              <div class="p-3">
-                <p class="text-[16px] md:text-xl mb-4">
-                  I was looking for a song on the Internet, came to your site
-                  and for the fifth hour I have been going through the sections,
-                  forgetting what I was looking for.
-                </p>
-                <p class="text-sm md:text-xl font-semibold text-slate-400">
-                  Jonh 30.05.2022
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Item 3 -->
-          <div
-            class="hidden bg-white dark:bg-mainColor duration-700 ease-in-out"
-            data-carousel-item
-          >
-            <div
-              class="border-mainColor dark:border-white border-2 rounded-3xl"
-            >
-              <div class="p-3">
-                <p class="text-[16px] md:text-xl mb-4">
-                  The site is the bomb, found something that was not in other
-                  sites. Yes, and so a lot of good tracks. Props to the
-                  developers
-                </p>
-                <p class="text-sm md:text-xl font-semibold text-slate-400">
-                  Kate 24.10.2021
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Item 4 -->
-          <div
-            class="hidden bg-white dark:bg-mainColor duration-700 ease-in-out"
-            data-carousel-item
-          >
-            <div
-              class="border-mainColor dark:border-white border-2 rounded-3xl"
-            >
-              <div class="p-3">
-                <p class="text-[16px] md:text-xl mb-4">
-                  Super site! The design is nice, it doesn't hurt the eye, the
-                  search is conveniently located and all the music is available
-                </p>
-                <p class="text-sm md:text-xl font-semibold text-slate-400">
-                  Ron 11.08.2022
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Item 5 -->
-          <div
-            class="hidden bg-white dark:bg-mainColor duration-700 ease-in-out"
-            data-carousel-item
-          >
-            <div
-              class="border-mainColor dark:border-white border-2 rounded-3xl"
-            >
-              <div class="p-3">
-                <p class="text-[16px] md:text-xl mb-4">
-                  It's great, you can hear it! Been listening and listening all
-                  day! The design is nice, it doesn't hurt the eye, the search
-                  is conveniently. THANK YOU🥑🤭
-                </p>
-                <p class="text-sm md:text-xl font-semibold text-slate-400">
-                  Ron 11.08.2022
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Slider controls -->
-        <button
-          type="button"
-          class="absolute transition-colors bottom-[50px] md:bottom-[60px] right-16 z-30 flex items-start justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev
-        >
-          <span
-            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-subColor/30 dark:bg-subColor md:group-hover:bg-subColor dark:md:group-hover:bg-subColor/60 group-focus:outline-none"
-          >
-            <svg
-              aria-hidden="true"
-              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 19l-7-7 7-7"
-              ></path>
-            </svg>
-            <span class="sr-only">Previous</span>
-          </span>
-        </button>
-        <button
-          type="button"
-          class="absolute transition-colors bottom-[50px] md:bottom-[60px] right-0 z-30 flex items-start justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next
-        >
-          <span
-            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-subColor/30 dark:bg-subColor md:group-hover:bg-subColor dark:md:group-hover:bg-subColor/60 group-focus:outline-none"
-          >
-            <svg
-              aria-hidden="true"
-              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              ></path>
-            </svg>
-            <span class="sr-only">Next</span>
-          </span>
-        </button>
-      </div>
-    </section>
-    <section class="bg-subColor">
-      <p class="text-center text-white font-normal p-4 md:p-7">
-        © 2022 Music.vibes
+  </div>
+  <section class="container mx-auto flex place-content-between gap-x-9 lg:gap-x-14 xl:gap-x-48 items-center mt-9">
+    <div class="">
+      <h1 class="text-[43px] md:text-[50px] lg:text-[70px] leading-[60px] lg:leading-[75px] font-extrabold ">
+        Music to suit your mood
+      </h1>
+      <p class="mt-4 lg:mt-8">
+        Behind every song, there's always an emotion. Maybe that's why we love music. By sharing emotions, we put each
+        other in the mood. Listen to music to suit YOUR mood!
       </p>
-    </section>
-  </body>
-  <script src="./node_modules/flowbite/dist/flowbite.js"></script>
-  <script src="./script.js"></script>
+      <div class="flex flex-wrap gap-2 md:gap-4 items-center mt-5 lg:mt-7">
+        <a href="#"
+          class="text-white font-semibold bg-subColor hover:bg-rose-700 border-2 border-subColor hover:border-white dark:hover:border-mainColor py-[10px] px-2 md:px-3 w-full md:w-auto text-center rounded-full transition-colors">
+          Choose your mood
+        </a>
+        <a href="#"
+          class="font-medium hover:text-white hover:bg-rose-700 border-2 border-subColor hover:border-white dark:hover:border-mainColor  py-[10px] px-2 md:px-5 w-full md:w-auto text-center rounded-full transition-colors">
+          Random song
+        </a>
+      </div>
+    </div>
+    <img src="./img/music.png" alt="music" class="hidden md:block w-[300px] lg:w-[450px]" />
+  </section>
+  <section class="container mx-auto mt-10">
+    <h2 class="text-4xl lg:text-6xl text-center font-extrabold mb-11 ">
+      Top Playlists
+    </h2>
+    <div class="mt-6 space-y-12 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 lg:gap-x-10 xl:gap-x-24 ">
+      <div class="relative group p-4 rounded-xl transition-all shadow-2xl bg-white hover:shadow-subColor">
+        <div
+          class="relative h-64 md:h-48 lg:h-64 w-full overflow-hidden rounded-lg sm:aspect-w-2 sm:aspect-h-1 lg:aspect-square">
+          <img src="./img/card-1.jpg" alt="1" class="h-full w-full object-cover object-center" />
+        </div>
+        <a href="#">
+          <p class="text-center text-2xl font-semibold transition-all text-mainColor group-hover:text-subColor mt-4">
+            Good morning
+          </p>
+        </a>
+      </div>
+      <div class="group relative p-4 rounded-xl transition-all shadow-2xl bg-white hover:shadow-cyan-600">
+        <div
+          class="relative h-64 md:h-48 lg:h-64 w-full overflow-hidden rounded-lg sm:aspect-w-2 sm:aspect-h-1 lg:aspect-square">
+          <img src="./img/card-2.jpg" alt="" class="h-full w-full object-cover object-center" />
+        </div>
+        <a href="#">
+          <p class="text-center text-2xl font-semibold transition-all text-mainColor group-hover:text-cyan-600 mt-4">
+            Melancholics
+          </p>
+        </a>
+      </div>
+      <div class="group relative p-4 rounded-xl transition-all shadow-2xl bg-white hover:shadow-indigo-900">
+        <div
+          class="relative h-64 md:h-48 lg:h-64 w-full overflow-hidden rounded-lg sm:aspect-w-2 sm:aspect-h-1 lg:aspect-square">
+          <img src="./img/card-3.jpg" alt="" class="h-full w-full object-cover object-center" />
+        </div>
+        <a href="#">
+          <p class="text-center text-2xl font-semibold transition-all text-mainColor group-hover:text-indigo-900 mt-4">
+            Romance
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="container mx-auto mt-16 mb-12">
+    <h2 class="text-4xl font-extrabold text-center mb-20 lg:text-6xl">
+      Reviews
+    </h2>
+    <div id="controls-carousel" class="relative" data-carousel="static">
+      <!-- Carousel wrapper -->
+      <div class="relative h-52 md:h-40 overflow-hidden rounded-lg">
+        <!-- Item 1 -->
+        <div class="hidden bg-white dark:bg-mainColor duration-700 ease-in-out" data-carousel-item="active">
+          <div class="border-mainColor dark:border-white border-2 rounded-3xl">
+            <div class="p-3">
+              <p class="text-[16px] md:text-xl mb-4">
+                This is the best site! There is a good energy here that gives
+                good spirits and good memories! Good luck to you!
+              </p>
+              <p class="text-sm md:text-xl font-semibold text-slate-400">
+                Ann 14.08.2022
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden bg-white dark:bg-mainColor duration-700 ease-in-out" data-carousel-item>
+          <div class="border-mainColor dark:border-white border-2 rounded-3xl">
+            <div class="p-3">
+              <p class="text-[16px] md:text-xl mb-4">
+                I was looking for a song on the Internet, came to your site
+                and for the fifth hour I have been going through the sections,
+                forgetting what I was looking for.
+              </p>
+              <p class="text-sm md:text-xl font-semibold text-slate-400">
+                Jonh 30.05.2022
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden bg-white dark:bg-mainColor duration-700 ease-in-out" data-carousel-item>
+          <div class="border-mainColor dark:border-white border-2 rounded-3xl">
+            <div class="p-3">
+              <p class="text-[16px] md:text-xl mb-4">
+                The site is the bomb, found something that was not in other
+                sites. Yes, and so a lot of good tracks. Props to the
+                developers
+              </p>
+              <p class="text-sm md:text-xl font-semibold text-slate-400">
+                Kate 24.10.2021
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden bg-white dark:bg-mainColor duration-700 ease-in-out" data-carousel-item>
+          <div class="border-mainColor dark:border-white border-2 rounded-3xl">
+            <div class="p-3">
+              <p class="text-[16px] md:text-xl mb-4">
+                Super site! The design is nice, it doesn't hurt the eye, the
+                search is conveniently located and all the music is available
+              </p>
+              <p class="text-sm md:text-xl font-semibold text-slate-400">
+                Ron 11.08.2022
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden bg-white dark:bg-mainColor duration-700 ease-in-out" data-carousel-item>
+          <div class="border-mainColor dark:border-white border-2 rounded-3xl">
+            <div class="p-3">
+              <p class="text-[16px] md:text-xl mb-4">
+                It's great, you can hear it! Been listening and listening all
+                day! The design is nice, it doesn't hurt the eye, the search
+                is conveniently. THANK YOU🥑🤭
+              </p>
+              <p class="text-sm md:text-xl font-semibold text-slate-400">
+                Ron 11.08.2022
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slider controls -->
+      <button type="button"
+        class="absolute transition-colors bottom-[50px] md:bottom-[60px] right-16 z-30 flex items-start justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-subColor/30 dark:bg-subColor md:group-hover:bg-subColor dark:md:group-hover:bg-subColor/60 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button"
+        class="absolute transition-colors bottom-[50px] md:bottom-[60px] right-0 z-30 flex items-start justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-subColor/30 dark:bg-subColor md:group-hover:bg-subColor dark:md:group-hover:bg-subColor/60 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+  </section>
+  <section class="bg-subColor">
+    <p class="text-center text-white font-normal p-4 md:p-7">
+      © 2022 Music.vibes
+    </p>
+  </section>
+</body>
+<script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+<script src="./node_modules/flowbite/dist/flowbite.js"></script>
+<script src="./script.js"></script>
+
 </html>
