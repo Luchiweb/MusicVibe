@@ -44,3 +44,13 @@ function openMenu() {
 
 burger.addEventListener("click", openMenu);
 closeButton.addEventListener("click", closeMenu);
+
+let w = window.screen.availWidth;
+if (w > 1000) {
+  let paralax = document.getElementById("paralax");
+  window.addEventListener("mousemove", function (e) {
+    let x = e.clientX / window.innerWidth;
+    let y = e.clientY / window.innerHeight;
+    paralax.style.transform = "translate(+" + x * 25 + "px, +" + y * 25 + "px)";
+  });
+}
