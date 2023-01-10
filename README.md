@@ -1,6 +1,6 @@
 # MusicVibes
 
-MusicVibes is an adaptive layout I created using the Tailwind CSS framework. You can see the full design by following this [link](#)
+MusicVibes is an adaptive layout I created using the Tailwind CSS framework. You can see the full design by following this [link](https://luchiweb.github.io/MusicVibe/)
 
 ## The idea
 
