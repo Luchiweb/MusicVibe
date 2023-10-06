@@ -54,12 +54,8 @@ The simplicity of creating a dark theme for an app or website is one of the awes
 
 ## Author:
 
----
-
 ## [Svitlana Moiseienko 🫶🏻](https://github.com/Luchiweb)
 
 ## License
-
----
 
 ## [MIT](https://choosealicense.com/licenses/mit/)
